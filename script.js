@@ -1,15 +1,15 @@
 const doorImage1 = document.getElementById('door1');
-const botDoorPath = 'https://content.codecademy.com/projects/chore-door/images/robot.svg';
 const doorImage2 = document.getElementById('door2');
-const beachDoorPath = 'https://content.codecademy.com/projects/chore-door/images/beach.svg';
 const doorImage3 = document.getElementById('door3');
+const startButton = document.getElementById('start');
+const botDoorPath = 'https://content.codecademy.com/projects/chore-door/images/robot.svg';
+const beachDoorPath = 'https://content.codecademy.com/projects/chore-door/images/beach.svg';
 const spaceDoorPath = 'https://content.codecademy.com/projects/chore-door/images/space.svg';
+const closedDoorPath = 'https://content.codecademy.com/projects/chore-door/images/closed_door.svg';
 let numClosedDoors = 3;
 let openDoor1;
 let openDoor2;
 let openDoor3;
-const closedDoorPath = 'https://content.codecademy.com/projects/chore-door/images/closed_door.svg';
-const startButton = document.getElementById('start');
 
 const isClicked = (door) => {
  if( door.src === closedDoorPath ) {
@@ -23,6 +23,8 @@ const playDoor = () => {
   numClosedDoors--;
   if(numClosedDoors === 0) {
     gameOver('win');
+  } else {
+
   }
 }
 
