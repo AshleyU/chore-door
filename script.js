@@ -23,8 +23,6 @@ const playDoor = () => {
   numClosedDoors--;
   if(numClosedDoors === 0) {
     gameOver('win');
-  } else {
-
   }
 }
 
@@ -51,18 +49,21 @@ const randomChoreDoorGenerator = () => {
 doorImage1.onclick = () => {
   if(!isClicked(doorImage1)) {
     doorImage1.src = openDoor1;
+    playDoor();
   }
 }
 
 doorImage2.onclick = () => {
   if(!isClicked(doorImage2)) {
     doorImage2.src = openDoor2;
+    playDoor();
   }
 }
 
 doorImage3.onclick = () => {
   if(!isClicked(doorImage3)) {
     doorImage3.src = openDoor3;
+    playDoor();
   }
 }
 
